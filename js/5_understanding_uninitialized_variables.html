@@ -1,0 +1,30 @@
+/* When JS variable are declared they have an initial value of
+undefined.
+~ A mathematical operation on a undefined variable leads to NaN.
+~ A string concatenation operation on a undefined variabled leads to the string literal "undefined"
+*/
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //Initializing some variables so we may operate on them with the +
+    var a = 5;
+    var b = 10;
+    var c = "I am a";
+
+    a = a + 1;
+    b = b + 5;
+    c = c + " String!"
+
+    console.log(a, b, c)
+    
+  </script>
+</body>
+</html>
