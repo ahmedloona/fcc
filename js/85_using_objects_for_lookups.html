@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    // Setup
+    function phoneticLookup(val) {
+    var result = "";
+
+    var lookup = {
+      "alpha": "Adams",
+      "bravo": "Boston",
+      "charlie": "Chicago",
+      "delta": "Denver",
+      "echo": "Easy",
+      "foxtrot": "Frank"
+    };
+
+    result = lookup[val];
+
+    // Only change code above this line
+    return result;
+    }
+
+    // Change this value to test
+    phoneticLookup("charlie");
+  </script>
+</body>
+</html>

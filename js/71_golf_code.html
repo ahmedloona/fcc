@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<script>
+  var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+  function golfScore(par, strokes) {
+    // Only change code below this line
+    let comment = "";
+    if (strokes === 1) {
+      comment = "Hole-in-one!";
+    } else if (strokes <= par - 2) {
+      comment = "Eagle";
+    } else if (strokes === par - 1) {
+      comment = "Birdie";
+    } else if (strokes === par) {
+      comment = "Par";
+    } else if (strokes === par + 1) {
+      comment = "Bogey";
+    } else if (strokes === par + 2) {
+      comment = "Double Bogey";
+    } else {
+      comment = "Go Home!";
+    }
+    return comment;
+    // Only change code above this line
+  }
+  // Change these values to test
+  golfScore(5, 4);
+</script>
+</body>
+</html>
